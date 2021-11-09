@@ -15,3 +15,5 @@ class Comment(models.Model):
 class Reply(models.Model):
     comment_pk = models.IntegerField(null=True, blank=True)
     reply = models.CharField(max_length=200, null=True, blank=True)
+    likes = models.IntegerField(null=True, blank=True)
+    dislikes = models.IntegerField(null=True, blank=True)
