@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import Video, Comment, Reply
+from .models import Video, Comment, Reply
 
 class VideoSerializer(serializers.ModelSerializer):
     class Meta:

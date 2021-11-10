@@ -1,5 +1,5 @@
 from django.http import request
-from models import Video, Comment, Reply
+from .models import Video, Comment, Reply
 from .serializers import VideoSerializer, CommentSerializer, ReplySerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
