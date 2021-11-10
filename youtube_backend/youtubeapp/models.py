@@ -6,6 +6,7 @@ class Video(models.Model):
 
 
 class Comment(models.Model):
+    video_id = models.CharField(max_length=100)
     video_pk = models.IntegerField(null=True, blank=True)
     comment = models.CharField(max_length=250)
     likes = models.IntegerField(null=True, blank=True)
