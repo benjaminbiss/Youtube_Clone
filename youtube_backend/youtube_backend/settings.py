@@ -54,7 +54,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'youtube_backend.urls'
 
-file: CORS_ORIGIN_ALLOW_ALL_TRUE
+CORS_ORIGIN_ALLOW_ALL=True
 
 TEMPLATES = [
     {
