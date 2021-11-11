@@ -9,7 +9,11 @@ class VideoSerializer(serializers.ModelSerializer):
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
+<<<<<<< HEAD
         fields = ['id', 'video_id', 'comment', 'likes', 'dislikes']
+=======
+        fields = ['id', 'video_id', 'video_pk', 'comment', 'likes', 'dislikes']
+>>>>>>> 70ff97b8f5c9a4ecbd92cabf8655acfe07c51824
         
 class ReplySerializer(serializers.ModelSerializer):
     class Meta:
